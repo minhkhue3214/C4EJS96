@@ -1,0 +1,57 @@
+section{
+    position: relative;
+}
+.banner{
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    /* background-image: url("/BodyOdour/Media/css/.Media/image/bia.jpg"); */
+    background-color: black;
+    color: cornsilk;
+    line-height: 1.;
+    font-size: 25px;
+    font-family: "Josefin Sans",sans-serif;
+    font-weight: 500;
+}
+.main{
+    text-align: center;
+}
+.main-content{
+    display:flex;
+    flex-wrap: wrap;
+    width:1100px;
+    margin:0 auto;
+    font-family: "Josefin Sans",sans-serif;
+
+}
+.main-item{
+    width:25%;
+    padding:10px 0;
+}
+.title{
+    width:170px;
+    display: block;
+}
+.main-pic{
+    padding-right: 7rem  ;
+}
+.buy{
+    position: absolute;
+    top: 0;
+}
+
+#show{
+    background-color:red;
+    width:50%;
+    height:50%;
+  }
+  
+  #table{
+      display:flex;
+      /* flex-wrap: wrap; */
+      
+      flex-direction: column;
+      width:1100px;
+      margin:0 auto;
+      font-family: "Josefin Sans",sans-serif;
+  }
