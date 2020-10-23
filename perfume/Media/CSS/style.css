@@ -73,13 +73,13 @@ input[type=text], input[type=password] {
   padding: 12px 20px;
   margin: 8px 0;
   display: inline-block;
-  border: 1px solid #ccc;
+  border: 0,1em solid rgb(197, 101, 101);
   box-sizing: border-box;
 }
 
 /* Set a style for all buttons */
 button {
-  background-color: #4CAF50;
+  background-color: rgb(7 92 144);
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
@@ -118,8 +118,9 @@ img.avatar {
   align-items: center;
   height: 70%;
   width: 60%;
-  background-color: yellow;
+  background-image:url('https://wallpaperaccess.com/full/473027.jpg');
   padding: 10px;
+  border-radius: 1rem;
 }
 
 span.psw {
@@ -199,15 +200,62 @@ span.psw {
 }
 
 #sign_out_btn{
-    background-color: red;
+    background-color:black;
     border-radius: 1rem;
     width: 10%;
 
 }
 
 #sign_in_btn{
-    background-color: red;
+  width: 10%;
     border-radius: 1rem;
     width: 10%;   
 }
 
+#Trademark{
+  /* display:flex; */
+  flex-wrap: wrap;
+  width:1100px;
+  margin:0 auto;
+  font-family: "Josefin Sans",sans-serif;
+}
+
+#Trademark image{
+  height: 200px;
+  width: 50%;
+}
+
+#banner_odour{
+  /* background-image:url(/perfume/Media/image/bia.jpg); */
+  background-attachment: fixed;
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSkE8AxpC0e8QQ2p2COy4WBrba95AhJzKT0xw&usqp=CAU');
+}
+
+#search_btn{
+  width: 60%;
+  background-color:rgb(7 92 144);
+}
+
+#side_user_name{
+  margin-left: 5%;
+}
+
+#close{
+  width: 10%;
+}
+
+#bill{
+  width: 10%;
+}
+
+#send_btn{
+  width:10%;
+}
+
+#about_BodyOdour{
+  background-color:#486577;
+}
+
+#input_place{
+  width: 60%;
+}
