@@ -40,11 +40,15 @@ section{
 } */
 /* nav */
 nav{
-    position: absolute ;
-    margin: 50px 20px;
-    top: 0px;
-    right: 0px;
+  position: absolute ;
+  margin: 50px 20px;
+  top: 0px;
+  right: 0px;
+  color: black;
 }
+
+
+
 nav>ul>li {
     text-align: center;
     line-height: 40px;
@@ -52,8 +56,9 @@ nav>ul>li {
     float: left ;
 }
 nav>ul>li>a {
+    color:black;
     cursor: pointer;
-    /* text-decoration: none; */
+    text-decoration: none;
     /* display: block; */
     /* outline: none; */
     width: 100% ;
@@ -66,6 +71,14 @@ nav>ul>li>a {
 
 /* login */
 body {font-family: Arial, Helvetica, sans-serif;}
+
+body h4{
+  color:black;
+}
+
+body h2{
+  color:black;
+}
 
 /* Full-width input fields */
 input[type=text], input[type=password] {
@@ -253,9 +266,11 @@ span.psw {
 }
 
 #about_BodyOdour{
-  background-color:#486577;
+  background-color: rgb(38 157 230);
 }
 
 #input_place{
   width: 60%;
 }
+
+/* Trade */
