@@ -52,6 +52,8 @@ function signIn(index) {
     signInBtn.style.display = `none`;
     signOutBtn.style.display = `block`;
     sideName.textContent = user[index].name;
+    sideName.style.display = `block`;     
+
 }
 // Nút đăng xuất
 function signOut() {
@@ -172,3 +174,4 @@ function showSlides() {
   dots[slideIndex - 1].className += " active";
   setTimeout(showSlides, 2000);
 }
+
