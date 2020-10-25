@@ -228,10 +228,11 @@
             <li><a href="#Trademark">TRADEMARK</a></li>
             <li><a href="#Sale">SALE</a></li>
             <li><a href="#contact">CONTACT</a></li>
-            <li><div id="content_title_bag">
-              <img width="30"
+            <li><div id="content_title_bag"><button id="bag" onclick="document.getElementById(`cart`).style.display=`block`">
+              <img width="20"
                 src="https://cdn2.iconfinder.com/data/icons/e-commerce-shopping-perfect-pixel-outline/32/e-commerece-icon-02-512.png"
                 alt="">
+              </button> 
               <span id="bag_red_dot" class="all_red_dot">0</span>
             </div></li>
           </ul>
@@ -264,19 +265,19 @@
                     <div class="modal_cart_block_catgory">
                         <div class="products">Name</div>
                         <div class="price">Brand</div>
-                        <div class="numbers">Prize</div>
-                        <div class="numbers">Size</div>
+                        <div id="price" class="numbers">Price</div>
+                        <!-- <div class="numbers">Size</div>
                         <div class="numbers">Sex</div>
-                        <div class="numbers">Scent</div>
+                        <div class="numbers">Scent</div> -->
                     </div>
                     <div id="container_cart_items">
     
                     </div>
                     <div class="bottom_slice_bar"></div>
                     <div id="sum_price_title" class="sum_price_title">Tổng Giá Tien</div>
-                    <div id="sum_price" class="sum_price"> vnd</div>
+                    <div id="sum" class="sum_price"> 0 vnd</div>
                     <button class="cart_cancel_button" onclick="document.getElementById(`cart`).style.display=`none`">Đóng</button>
-                    <button id="cart_pay_button" class="cart_pay_button">Hoá Đơn</button>
+                    <button onclick="Sum()" id="cart_pay_button" class="cart_pay_button">Hoá Đơn</button>
                 </div>
             </div>
 

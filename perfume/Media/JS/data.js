@@ -37,7 +37,7 @@ let productsData = [
     {
         name:`La Nuit De L’homme EDT`,
         brand:`Yves Saint Laurent`,
-        price:`2.950.000đ`,
+        price:2950000,
         imageUrl: `./Media/image/La Nuit De L’homme EDT.png` ,
         size:`100ml`,
         sex:`male`,
@@ -49,7 +49,7 @@ let productsData = [
     },{
         name:`Libre`,
         brand:`Yves Saint Laurent`,
-        price:`3.400.000đ`,
+        price:3400000,
         imageUrl:`./Media/image/Libre.png`,
         size:`90ml`,
         sex:`female`,
@@ -170,7 +170,7 @@ let productsData = [
     },{
         name:`Un Jardin Sur Le Nil`,
         brand:`Hermès`,
-        price:`2.800.000đ`,
+        price:2800000,
         imageUrl:`./Media/image/Un Jardin Sur Le Nil.png`,
         size:`100ml`,
         sex: `unisex`,

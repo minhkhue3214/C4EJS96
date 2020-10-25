@@ -68,51 +68,73 @@ signOutBtn.addEventListener(`click`, signOut);
 //showPro
 let mainProd = document.getElementById('main-content');
 //fnc list
-function showList(productsData){
+// function showList(productsData){
 
-    for(let prod of productsData){
-        let imageUrl = prod.imageUrl;
-        let name = prod.name;
-        // console.log(name)
-        let brand = prod.brand;
-        let price = prod.price;
-        let size = prod.size;
-        let sex = prod.sex;
-        let scent = prod.scent;
-        // let more = prod['link'][0].attributes.href;
-        product(imageUrl,name, brand,price,size,sex,scent);
-    }
-}
+//     for(let prod of productsData){
+//         let imageUrl = prod.imageUrl;
+//         let name = prod.name;
+//         // console.log(name)
+//         let brand = prod.brand;
+//         let price = prod.price;
+//         let size = prod.size;
+//         let sex = prod.sex;
+//         let scent = prod.scent;
+//         // let more = prod['link'][0].attributes.href;
+//         product(imageUrl,name, brand,price,size,sex,scent);
+//     }
+// }
 // console.log(showList);
-showList(productsData);
+// showList(productsData);
 // fnc prod
-function product(imageUrl,name, brand,price,size,sex,scent){
+// function product(imageUrl,name, brand,price,size,sex,scent){
 
     // console.log(mainProd)
-    mainProd.insertAdjacentHTML('beforeend',`
-    <div class="main-item">
-        <div class="main-pic">
-            <img wirdth="170" height="170" src="${imageUrl}" alt="${name}"/>
-        </div>
-        <div class="title">
-            <b>${brand}</b><br/>
-            <span>${price}</span>
-          <button>buy</button>
-        </div>
-    </div>
-`);
+//     mainProd.insertAdjacentHTML('beforeend',`
+//     <div class="main-item">
+//         <div class="main-pic">
+//             <img wirdth="170" height="170" src="${imageUrl}" alt="${name}"/>
+//         </div>
+//         <div class="title">
+//             <b>${brand}</b><br/>
+//             <span>${price}</span>
+//           <button class="add_btns" >buy</button>
+//         </div>
+//     </div>
+// `);
+// }
+
+function update_table() {
+
+  // table_body.innerHTML = '';
+
+  for (let data of productsData) {
+    mainProd.insertAdjacentHTML('beforeend', `<tr><div class="main-item"> <div class="main-pic">
+          <img wirdth="170" height="170" src="${data.imageUrl}" alt="${data.name}"/>
+      </div>
+      <div class="title">
+          <b>${data.brand}</b><br/>
+          <span>${data.price}</span>
+        
+      </div></td><button class="add_btns">Buy</button></td></div></tr>`);
+    };
 }
+update_table();
+
+
+
 
 
 
 
 // //DOM add-delete
 
-// const table_body = document.getElementById('body');
-// const add_btns = document.getElementsByClassName('add_btns');
-// const remove_btns = document.getElementsByClassName('remove_btn');
-// const tableChoice = document.getElementById('table_choice');
-// const product_choice=[ ];
+const table_body = document.getElementById('body');
+const add_btns = document.getElementsByClassName('add_btns');
+const remove_btns = document.getElementsByClassName('remove_btn');
+const tableChoice = document.getElementById('table_choice');
+const number_product = document.getElementsByClassName('number_ipt');
+const ContainerCartItems = document.getElementById('container_cart_items');
+const product_choice=[ ];
 
 // function update_table() {
 
@@ -123,35 +145,47 @@ function product(imageUrl,name, brand,price,size,sex,scent){
 //       };
 // }
 // update_table();
-// // button Add table choice
-//   for (let i = 0; i < add_btns.length; i++) {
-//         add_btns[i].addEventListener('click', () => {
-//            let choice ={name:productsData[i].name, brand:productsData[i].brand, price:productsData[i].price, size:productsData[i].size,sex:productsData[i].sex,scent:productsData[i].scent}
-//            product_choice.push(choice)
-//            // console.log(choice)
-//            // console.log(product_choice)
-//            update_tableChoice();
-//         })
-//   }
-// function  update_tableChoice(){
 
-//     tableChoice.innerHTML = '';
+// button Add table choice
+  for (let i = 0; i < add_btns.length; i++) {
+        add_btns[i].addEventListener('click', () => {
+           let choice ={name:productsData[i].name, brand:productsData[i].brand, price:productsData[i].price, size:productsData[i].size,sex:productsData[i].sex,scent:productsData[i].scent}
+           product_choice.push(choice)
+           // console.log(choice)
+           // console.log(product_choice)
+           update_tableChoice();
+        })
+  }
+function  update_tableChoice(){
 
-//     for (let prod of product_choice) {
-//         tableChoice.insertAdjacentHTML('beforeend', `<tr><td>${prod .name}</td><td>${prod .brand}</td><td>${prod .price}</td>   <td>${prod .size}</td><td>${prod .sex}</td><td>${prod .scent}</td><button onclick="Remove ()" class="remove_btn">X</button></tr>`)
+  ContainerCartItems.innerHTML = '';
+
+    for (let prod of product_choice) {
+      ContainerCartItems.insertAdjacentHTML('beforeend',`<table><tr><th>${prod.name}</th><th>${prod.brand}</th><th>${prod.price}</th><th><input style="width=5px" type="number" min="1" placeholder="number" id="box"  class="number_ipt"></th><th><button onclick="Remove()" class="remove_btn">X</button></th></tr></table>`)
        
-//       }
-// } 
-//  // button remove table choice
-// function Remove(){
-//  for (let i = 0; i < remove_btns.length; i++) {
-//         remove_btns[i].addEventListener('click', () => {
-//             product_choice.splice(i, 1);
-//           console.log(product_choice)
-//            update_tableChoice();
-//         });
-//  }
-// }
+      }
+} 
+
+ // button remove table choice
+function Remove(){
+ for (let i = 0; i < remove_btns.length; i++) {
+        remove_btns[i].addEventListener('click', () => {
+            product_choice.splice(i, 1);
+          console.log(product_choice)
+           update_tableChoice();
+        });
+ }
+}
+
+function Sum() {
+  let sum=0;
+   for(let t=0 ;t<number_product.length;t++)
+    {
+    sum+=product_choice[t].price*number_product[t].value;
+    }
+    console.log(sum)
+     document.getElementById('sum').innerHTML=sum;
+  }
 
 // //Slideshow
 var slideIndex = 0;

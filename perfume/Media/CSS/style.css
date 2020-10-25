@@ -137,7 +137,8 @@ img.avatar {
   align-items: center;
   height: 75%;
   width: 60%;
-  background-image:url('https://wallpaperaccess.com/full/473027.jpg');
+  /* background-image:url('https://wallpaperaccess.com/full/473027.jpg'); */
+  background-color: white;
   padding: 10px;
   border-radius: 1rem;
 }
@@ -249,6 +250,9 @@ span.psw {
   /* background-image:url(/perfume/Media/image/bia.jpg);  */
   /* background-attachment: fixed; */
  
+  /* background-image: url('https://scontent-xsp1-2.xx.fbcdn.net/v/t1.15752-9/122234229_372920083895777_3991063773885190169_n.jpg?_nc_cat=106&ccb=2&_nc_sid=ae9488&_nc_ohc=NmQ0QSs0DfkAX8bRkx6&_nc_ht=scontent-xsp1-2.xx&oh=3fe6f54235568dd2dd1173b99b1ae9e1&oe=5F953519'); */
+}
+#content_bg{
   background-image: url('https://scontent-xsp1-2.xx.fbcdn.net/v/t1.15752-9/122234229_372920083895777_3991063773885190169_n.jpg?_nc_cat=106&ccb=2&_nc_sid=ae9488&_nc_ohc=NmQ0QSs0DfkAX8bRkx6&_nc_ht=scontent-xsp1-2.xx&oh=3fe6f54235568dd2dd1173b99b1ae9e1&oe=5F953519');
 }
 
@@ -282,6 +286,11 @@ span.psw {
   width: 60%;
 }
 
+#bag{
+  background-color: whitesmoke;
+  padding: 1px 10px;
+}
+
 /* Trade */
 
 /* SLIDESHOW */
@@ -305,7 +314,7 @@ img {
 }
 
 .container-fluid{
-  background-color: gray;
+  /* background-color: gray; */
   /* background-image:url(/perfume/Media/image/xoa.jpg); */
   padding: 13px;
   background-repeat: no-repeat;
@@ -610,4 +619,8 @@ img {
 .container .cart_pay_button:hover {
   background-color: yellow;
   color: black;
+}
+
+.remove_btn{
+  width: 1%;
 }
