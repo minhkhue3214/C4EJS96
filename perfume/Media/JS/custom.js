@@ -109,7 +109,7 @@ function update_table() {
 
   for (let data of productsData) {
     mainProd.insertAdjacentHTML('beforeend', `<tr><div class="main-item"> <div class="main-pic">
-          <img wirdth="170" height="170" src="${data.imageUrl}" alt="${data.name}"/>
+          <img class="img_pro" wirdth="170" height="170" src="${data.imageUrl}" alt="${data.name}"/>
       </div>
       <div class="title">
           <b>${data.brand}</b><br/>
@@ -150,10 +150,19 @@ const product_choice=[ ];
   for (let i = 0; i < add_btns.length; i++) {
         add_btns[i].addEventListener('click', () => {
            let choice ={name:productsData[i].name, brand:productsData[i].brand, price:productsData[i].price, size:productsData[i].size,sex:productsData[i].sex,scent:productsData[i].scent}
-           product_choice.push(choice)
-           // console.log(choice)
-           // console.log(product_choice)
-           update_tableChoice();
+           const isAdded = product_choice.find(product => product.name === choice.name)
+           const maxlength=product_choice.length
+           if (isAdded){
+            alert('bạn đã thêm sản phẩm này rồi');
+           }
+           else if(maxlength==5)
+           {
+            alert('Xin lỗi giỏ hàng đã đầy'); 
+           }
+           else{
+           product_choice.push(choice);
+           update_tableChoice()
+           }
         })
   }
 function  update_tableChoice(){
@@ -161,7 +170,7 @@ function  update_tableChoice(){
   ContainerCartItems.innerHTML = '';
 
     for (let prod of product_choice) {
-      ContainerCartItems.insertAdjacentHTML('beforeend',`<table><tr><th>${prod.name}</th><th>${prod.brand}</th><th>${prod.price}</th><th><input style="width=5px" type="number" min="1" placeholder="number" id="box"  class="number_ipt"></th><th><button onclick="Remove()" class="remove_btn">X</button></th></tr></table>`)
+      ContainerCartItems.insertAdjacentHTML('beforeend',`<tr><td>${prod.name}</td><td>${prod.brand}</td><td>${prod.price}</td><td><input style="width=2px" type="number" min="1" placeholder="number" id="box"  class="number_ipt"></td><td><button onclick="Remove()" class="remove_btn">Delete</button></td></tr>`)
        
       }
 } 
@@ -184,7 +193,7 @@ function Sum() {
     sum+=product_choice[t].price*number_product[t].value;
     }
     console.log(sum)
-     document.getElementById('sum').innerHTML=sum;
+     document.getElementById('sum').innerHTML=sum+" vnd";
   }
 
 // //Slideshow

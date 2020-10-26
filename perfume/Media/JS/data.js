@@ -61,7 +61,7 @@ let productsData = [
     }, {
         name:`Dior Sauvage EDT`,
         brand:`Dior`,
-        price:`3.150.000đ`,
+        price:3150000,
         imageUrl:`./Media/image/Dior Sauvage EDT.png`,
         size:`100ml`,
         sex:`male`,
@@ -73,7 +73,7 @@ let productsData = [
     }, {
         name:`Sauvage Parfum`,
         brand:`Dior`,
-        price:`3.850.000đ`,
+        price:3850000,
         imageUrl:`./Media/image/Sauvage Parfum.png`,
         size:`100ml`,
         sex:`male`,
@@ -86,7 +86,7 @@ let productsData = [
     }, {
         name:`Chanel Coco Noir`,
         brand:`Chanel`,
-        price:`4.250.000đ`,
+        price:4250000,
         imageUrl:`./Media/image/Chanel Coco Noir.png`,
         size:`100ml`,
         sex:`female`,
@@ -98,7 +98,7 @@ let productsData = [
     }, {
         name:`Chanel Chance EDT`,
         brand:`Chanel`,
-        price:`3.400.000đ`,
+        price:3400000,
         imageUrl:`./Media/image/Chanel Chance EDT.png`,
         size:`100ml`,
         sex:`female`,
@@ -110,7 +110,7 @@ let productsData = [
     }, {
         name:`Ombre Leather EDP`,
         brand:`Tom Ford`,
-        price:`4.700.000đ`,
+        price:4700000,
         imageUrl:`./Media/image/Ombre Leather EDP.png`,
         size:`100ml`,
         sex:`male`,
@@ -122,7 +122,7 @@ let productsData = [
     }, {
         name:`Noir de Noir`,
         brand:`Tom Ford`,
-        price:`8.000.000đ`,
+        price:8000000,
         imageUrl:`./Media/image/Noir de Noir.png`,
         size:`100ml`,
         sex: `unisex`,
@@ -134,7 +134,7 @@ let productsData = [
     },{
         name:`My Burberry Blush`,
         brand:`Burberry`,
-        price:`3.750.000đ`,
+        price:3750000,
         imageUrl:`./Media/image/My Burberry Blush.png`,
         size:`100ml`,
         sex: `female`,
@@ -146,7 +146,7 @@ let productsData = [
     },{
         name:`Mr. Burberry EDP`,
         brand:`Burberry`,
-        price:`3.000.000đ`,
+        price:3000000,
         imageUrl:`./Media/image/Mr. Burberry EDP.png`,
         size:`100ml`,
         sex: `male`,
@@ -158,7 +158,7 @@ let productsData = [
     },{
         name:`Twilly d’Hermès`,
         brand:`Hermès`,
-        price:`2.950.000đ`,
+        price:2950000,
         imageUrl:`./Media/image/Twilly d’Hermès.png`,
         size:`85ml`,
         sex: `female`,
