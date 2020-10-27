@@ -26,25 +26,49 @@ function signInOnClickCallback() {
     modalSignInStatusTitle.style.color = `black`;
 }
 signInBtn.addEventListener(`click`, signInOnClickCallback);
-//Nút đăng nhập trong phần Đăng nhập
+// Nút đăng nhập trong phần Đăng nhập
+// function modalSignInOnclickCallback() {
+//     console.log(user)
+//     for (let i = 0; i < user.length; i++) {
+//         console.log(user[i])
+//         if (user[i].email==modalNameInput.value && user[i].password==modalPasswordInput.value)
+//         { signIn(i);
+//               Content_Title_Bag.style.display = `block`;
+//                 modalNameInput.value = null;
+//                 modalPasswordInput.value = null;
+//                 modalSignIn.style.display = `none`;     
+//         } 
+//         else {
+//                 modalSignInStatusTitle.textContent = `Thông tin sai! Vui lòng điền lại`;
+//                 modalSignInStatusTitle.style.color = `red`;
+//                 modalNameInput.value = null;
+//                 modalPasswordInput.value = null;   
+//         }
+//     }
+// }
+
 function modalSignInOnclickCallback() {
-    console.log(user)
-    for (let i = 0; i < user.length; i++) {
-        console.log(user[i])
-        if (user[i].email==modalNameInput.value && user[i].password==modalPasswordInput.value)
-        { signIn(i);
-              Content_Title_Bag.style.display = `block`;
-                modalNameInput.value = null;
-                modalPasswordInput.value = null;
-                modalSignIn.style.display = `none`;     
-        } 
-        else {
-                modalSignInStatusTitle.textContent = `Thông tin sai! Vui lòng điền lại`;
-                modalSignInStatusTitle.style.color = `red`;
-                modalNameInput.value = null;
-                modalPasswordInput.value = null;   
-        }
+  // console.log(user)
+  check = false;
+  for (let i = 0; i < user.length; i++) {
+      console.log(user[i])
+      if (user[i].email==modalNameInput.value && user[i].password==modalPasswordInput.value)
+      { signIn(i);
+            Content_Title_Bag.style.display = `block`;
+              modalNameInput.value = null;
+              modalPasswordInput.value = null;
+              modalSignIn.style.display = `none`;     
+
+          check=true
+            }
+     
     }
+      if(check==false){
+              modalSignInStatusTitle.textContent = `Thông tin sai! Vui lòng điền lại`;
+              modalSignInStatusTitle.style.color = `red`;
+              modalNameInput.value = null;
+              modalPasswordInput.value = null;   
+      }
 }
 modalSignInBtn.addEventListener(`click`, modalSignInOnclickCallback);
 

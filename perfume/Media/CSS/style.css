@@ -78,6 +78,7 @@ body h4{
   color:black;
 }
 
+
 body h2{
   color:black;
 }
@@ -280,7 +281,7 @@ span.psw {
 }
 
 #send_btn{
-  width:10%;
+  width:100%;
 }
 
 /* #about_BodyOdour{
@@ -313,6 +314,7 @@ body {
   width: 200px;
   height: 200px;
 }
+
 .img_pro{
   padding-left: 30%;
 }
@@ -657,7 +659,46 @@ th,td{    width: 3000px;
   border: 2px solid #0abff7;
 }
 
+/* .form-control{
+  width: 100%;
+} */
+.col-sm-6 {
+  display:inline-block;
+}
+
 .remove_btn:hover {
   background-color: orangered;
   color: white;
+}
+
+#contact {
+  display: inline-block;
+  margin-right: 11%;
+ line-height: 200%;
+}
+
+#contact_input{
+  display: inline-block;
+  /* float: right; */
+  width: 60%;
+}
+ /* chỉnh phần nhập vào contact */
+ #name{
+   display: inline-block;
+   width: 100%;
+ }
+
+#email{
+  display: inline-block;
+  width: 100%;
+  height: 43px;
+}
+
+#comments{
+  width: 100%;
+}
+
+#send_btn {
+  width: 10%;
+  border-radius: 1em;
 }
