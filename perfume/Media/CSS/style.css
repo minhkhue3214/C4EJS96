@@ -12,6 +12,9 @@ section{
     font-family: "Josefin Sans",sans-serif;
     font-weight: 500;
 }
+#content{
+  background-color: #d3d3d3;
+}
 .main{
     text-align: center;
 }
@@ -27,10 +30,11 @@ section{
     width:25%;
     padding:10px 0;
 }
-.title{
-    margin-left: 50px;
+
+.title
+{
     width:170px;
-    display: block;
+    display:inline-block;
 }
 .main-pic{
     padding-right: 7rem  ;
@@ -70,7 +74,8 @@ nav>ul>li:hover>a {
     color:pink;
 }
 
-/* login */
+
+/* ------------------------------sign-in----------------------------- */
 body {font-family: Arial, Helvetica, sans-serif;
 background-color:whitesmoke;}
 
@@ -115,8 +120,7 @@ button:hover {
 
 /* Extra styles for the cancel button */
 .cancelbtn {
-  width: auto;
-  padding: 10px 18px;
+  padding: 14px 20px;
   background-color: #f44336;
 }
 
@@ -137,7 +141,7 @@ img.avatar {
   margin-bottom: 50%;
   margin-left: 18%;
   align-items: center;
-  height: 75%;
+  height: 80%;
   width: 60%;
   /* background-image:url('https://wallpaperaccess.com/full/473027.jpg'); */
   background-color: white;
@@ -216,6 +220,121 @@ span.psw {
   }
 }
 
+/* ------------------------------sign-up----------------------------- */
+/* body {font-family: Arial, Helvetica, sans-serif;} */
+* {box-sizing: border-box;}
+
+/* Full-width input fields */
+input[type=text1], input[type=password1] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+
+/* Add a background color when the inputs get focus */
+input[type=text1]:focus, input[type=password1]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: rgb(7 92 144);
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+/* button:hover {
+  opacity:1;
+} */
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container2 {
+  padding: 16px;
+}
+
+/* The Modal (background) */
+.modal2 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #474e5d;
+  padding-top: 50px;
+}
+
+/* Modal Content/Box */
+.modal-content2 {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+ 
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+     width: 100%;
+  }
+}
+#sign_up_btn{
+  border-radius: 1rem; 
+  width: 10%;
+}
+
+
 #main-content button {
     background-color:rgb(7, 92, 144);;
     border-radius: 1rem;
@@ -239,30 +358,34 @@ span.psw {
     width: 10%;   
 }
 
-#Trademark{
+#trademark{
   /* display:flex; */
   flex-wrap: wrap;
   width:1100px;
   margin:0 auto;
   font-family: "Josefin Sans",sans-serif;
+  text-align: center;
+
+/* background-color: #d3d3d3; */
 }
 
-#Trademark image{
+#trademark img{
   height: 200px;
-  width: 50%;
+  width: 95%;
+}
+
+.rowtext-center {
+  display: grid;
+  grid-template-columns: repeat(3, 33%)
 }
 
 #banner_odour{
-  /* background-image:url(/perfume/Media/image/bia.jpg);  */
-  /* background-attachment: fixed; */
- 
-  /* background-image: url('https://scontent-xsp1-2.xx.fbcdn.net/v/t1.15752-9/122234229_372920083895777_3991063773885190169_n.jpg?_nc_cat=106&ccb=2&_nc_sid=ae9488&_nc_ohc=NmQ0QSs0DfkAX8bRkx6&_nc_ht=scontent-xsp1-2.xx&oh=3fe6f54235568dd2dd1173b99b1ae9e1&oe=5F953519'); */
-}
-#content_bg{
-  background-image: url('https://scontent-xsp1-2.xx.fbcdn.net/v/t1.15752-9/122234229_372920083895777_3991063773885190169_n.jpg?_nc_cat=106&ccb=2&_nc_sid=ae9488&_nc_ohc=NmQ0QSs0DfkAX8bRkx6&_nc_ht=scontent-xsp1-2.xx&oh=3fe6f54235568dd2dd1173b99b1ae9e1&oe=5F953519');
-}
+  background-image: url('https://scontent-hkg4-1.xx.fbcdn.net/v/t1.15752-9/122234229_372920083895777_3991063773885190169_n.jpg?_nc_cat=106&ccb=2&_nc_sid=ae9488&_nc_ohc=z9MSHJlcmu8AX97LpxH&_nc_ht=scontent-hkg4-1.xx&oh=6da0299ad468c2d19d3d976b62f950a5&oe=5FBEF499');
 
-
+}
+.about-img{
+  border-radius: 50%;
+}
 #search_btn{
   width: 100%;
   background-color:rgb(7 92 144);
@@ -330,6 +453,7 @@ img {
   padding: 13px;
   background-repeat: no-repeat;
   background-size: cover;
+  /* color: gray; */
 }
 
 
@@ -428,9 +552,9 @@ img {
 .x{
   display: block ;
 }
-.new{
+/* .new{
    background-image: url('https://scontent-xsp1-2.xx.fbcdn.net/v/t1.15752-9/122234229_372920083895777_3991063773885190169_n.jpg?_nc_cat=106&ccb=2&_nc_sid=ae9488&_nc_ohc=NmQ0QSs0DfkAX8bRkx6&_nc_ht=scontent-xsp1-2.xx&oh=3fe6f54235568dd2dd1173b99b1ae9e1&oe=5F953519');
-}
+} */
 
 /* giỏ hàng */
 .space {
@@ -662,6 +786,9 @@ th,td{    width: 3000px;
 /* .form-control{
   width: 100%;
 } */
+#contact{
+  background-color:#d3d3d3;
+}
 .col-sm-6 {
   display:inline-block;
 }
@@ -671,7 +798,7 @@ th,td{    width: 3000px;
   color: white;
 }
 
-#contact {
+#info {
   display: inline-block;
   margin-right: 11%;
  line-height: 200%;
@@ -702,3 +829,100 @@ th,td{    width: 3000px;
   width: 10%;
   border-radius: 1em;
 }
+
+
+
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content-send {
+align-self: center;
+margin-left: 38%;
+  
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* ---------------------view---------------- */
+.view{
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+.modal-view{
+  background-color: #fefefe;
+  margin: 5% auto 15% auto;
+  border: 1px solid #888;
+  width: fit-content; 
+  padding: 15px;
+}
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+
+/* -------------------------------view-------------------------------------------- */
+.img_pro_view{
+  padding: 0%;
+}
+
+.info_img{
+  display: flex;
+  flex:1;
+  justify-content: center;
+}
+
+.title_view{
+  flex:1;
+}
+
+.info_text {
+  display: flex;
+}
+

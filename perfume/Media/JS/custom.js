@@ -27,26 +27,6 @@ function signInOnClickCallback() {
 }
 signInBtn.addEventListener(`click`, signInOnClickCallback);
 // Nút đăng nhập trong phần Đăng nhập
-// function modalSignInOnclickCallback() {
-//     console.log(user)
-//     for (let i = 0; i < user.length; i++) {
-//         console.log(user[i])
-//         if (user[i].email==modalNameInput.value && user[i].password==modalPasswordInput.value)
-//         { signIn(i);
-//               Content_Title_Bag.style.display = `block`;
-//                 modalNameInput.value = null;
-//                 modalPasswordInput.value = null;
-//                 modalSignIn.style.display = `none`;     
-//         } 
-//         else {
-//                 modalSignInStatusTitle.textContent = `Thông tin sai! Vui lòng điền lại`;
-//                 modalSignInStatusTitle.style.color = `red`;
-//                 modalNameInput.value = null;
-//                 modalPasswordInput.value = null;   
-//         }
-//     }
-// }
-
 function modalSignInOnclickCallback() {
   // console.log(user)
   check = false;
@@ -91,44 +71,10 @@ signOutBtn.addEventListener(`click`, signOut);
 
 //showPro
 let mainProd = document.getElementById('main-content');
-//fnc list
-// function showList(productsData){
-
-//     for(let prod of productsData){
-//         let imageUrl = prod.imageUrl;
-//         let name = prod.name;
-//         // console.log(name)
-//         let brand = prod.brand;
-//         let price = prod.price;
-//         let size = prod.size;
-//         let sex = prod.sex;
-//         let scent = prod.scent;
-//         // let more = prod['link'][0].attributes.href;
-//         product(imageUrl,name, brand,price,size,sex,scent);
-//     }
-// }
-// console.log(showList);
-// showList(productsData);
-// fnc prod
-// function product(imageUrl,name, brand,price,size,sex,scent){
-
-    // console.log(mainProd)
-//     mainProd.insertAdjacentHTML('beforeend',`
-//     <div class="main-item">
-//         <div class="main-pic">
-//             <img wirdth="170" height="170" src="${imageUrl}" alt="${name}"/>
-//         </div>
-//         <div class="title">
-//             <b>${brand}</b><br/>
-//             <span>${price}</span>
-//           <button class="add_btns" >buy</button>
-//         </div>
-//     </div>
-// `);
-// }
 
 function update_table() {
 
+   mainProd.innerHTML = ''; 
   // table_body.innerHTML = '';
 
   for (let data of productsData) {
@@ -137,18 +83,12 @@ function update_table() {
       </div>
       <div class="title">
           <b>${data.brand}</b><br/>
-          <span>${data.price}</span>
-        
-      </div></td><button class="add_btns">Buy</button></td></div></tr>`);
+          <span>${data.price} vnđ</span>
+          
+      </div></td><button class="add_btns">Buy</button><button class="view_btns" onclick="document.getElementById('view').style.display='block'">View</button></td></div></tr>`);
     };
 }
 update_table();
-
-
-
-
-
-
 
 // //DOM add-delete
 
@@ -184,6 +124,7 @@ const product_choice=[ ];
             alert('Xin lỗi giỏ hàng đã đầy'); 
            }
            else{
+           ShowModal();
            product_choice.push(choice);
            update_tableChoice()
            }
@@ -220,6 +161,36 @@ function Sum() {
      document.getElementById('sum').innerHTML=sum+" vnd";
   }
 
+  //view
+const view = document.getElementById('view_perfume');
+const click_view = document.getElementsByClassName('view_btns');
+
+for (let i=0; i<click_view.length; i++) {
+  click_view[i].addEventListener('click',()=>{
+    // function view_perfume() {
+
+  view.innerHTML = ''; 
+
+  //  for (let i=0; i<productsData.length; i++) {
+     view.insertAdjacentHTML('beforeend', `<div class="info_text"> <div class="info_img">
+           <img class="img_pro_view" wirdth="170" height="170" src="${productsData[i].imageUrl}" alt="${productsData[i].name}"/>
+       </div>
+       <div class="title_view">
+           <div><b style="color: red;">${productsData[i].name}</b></div>
+           <div><b> Brand:</b> <span>${productsData[i].brand}</span></div>
+           <div><b> Size:</b> <span>${productsData[i].size}</span></div>
+           <div> <b> Sex:</b> <span>${productsData[i].sex}</span></div>
+           <div><b> Scent:</b> <span>${productsData[i].scent}</span></div>
+           <div><span><b> Price</b>: ${productsData[i].price} vnđ</span></div>
+           <button class="close_btns" onclick="document.getElementById('view').style.display='none'">Close</button>
+           
+        </div>`);
+    //  };
+  // }
+  // view_perfume();
+  })
+}
+
 // //Slideshow
 var slideIndex = 0;
 showSlides();
@@ -242,3 +213,102 @@ function showSlides() {
   setTimeout(showSlides, 2000);
 }
 
+// //male choice
+// const MaleChoice = document.getElementById('male_choice');
+// var maleproduct =  productsData.filter(function(male) {
+//     return male.sex == `male`;
+// });
+
+// console.log(maleproduct)
+
+// function update_maleproduct() {
+
+//   mainProd.innerHTML = '';
+
+//     for (let promale of maleproduct) {
+//       mainProd.insertAdjacentHTML('beforeend', `<tr><div class="main-item"> <div class="main-pic">
+//       <img class="img_pro" wirdth="170" height="170" src="${promale.imageUrl}" alt="${ promale.name}"/>
+//   </div>
+//   <div class="title">
+//       <b>${ promale.brand}</b><br/>
+//       <span>${ promale.price}</span>
+      
+//   </div></td><button class="add_btns">Buy</button></td></div></tr>`);
+//       };
+// }
+
+// //female choice
+
+// const FemaleChoice = document.getElementById('male_choice');
+// var femaleproduct =  productsData.filter(function(female) {
+//     return female.sex == `female`;
+// });
+
+// // console.log(femaleproduct)
+
+// function update_femaleproduct() {
+
+//   mainProd.innerHTML = '';
+
+//     for (let profemale of femaleproduct) {
+//       mainProd.insertAdjacentHTML('beforeend', `<tr><div class="main-item"> <div class="main-pic">
+//       <img class="img_pro" wirdth="170" height="170" src="${profemale.imageUrl}" alt="${ profemale.name}"/>
+//   </div>
+//   <div class="title">
+//       <b>${ profemale.brand}</b><br/>
+//       <span>${ profemale.price}</span>
+      
+//   </div></td><button class="add_btns">Buy</button></td></div></tr>`);
+//       };
+// }
+
+// //unisex choice
+
+// var unisexproduct =  productsData.filter(function(unisex) {
+//     return unisex.sex == `unisex`;
+// });
+
+// // console.log(femaleproduct)
+
+// function update_unisexproduct() {
+
+//   mainProd.innerHTML = '';
+
+//     for (let prounisex of unisexproduct) {
+//       mainProd.insertAdjacentHTML('beforeend', `<tr><div class="main-item"> <div class="main-pic">
+//       <img class="img_pro" wirdth="170" height="170" src="${prounisex.imageUrl}" alt="${prounisex.name}"/>
+//   </div>
+//   <div class="title">
+//       <b>${ prounisex.brand}</b><br/>
+//       <span>${ prounisex.price}</span>
+      
+//   </div></td><button class="add_btns">Buy</button></td></div></tr>`);
+//       };
+// }
+
+
+
+
+let name = document.getElementById('name')
+let email = document.getElementById('email')
+let comments = document.getElementById('comments')
+
+function ShowModal(){
+  var MyModal = document.getElementById('myModal')
+  name.value="";
+  email.value="";
+  comments.value="";
+ MyModal.style.display=`block`
+}
+
+// When the user clicks on <span> (x), close the modal
+ function CloseModal() {
+  var MyModal = document.getElementById('myModal')
+  MyModal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+// window.onclick = function() {
+//   var view1 = document.getElementById('view')
+//   view1.style.display = "none";
+//   }
