@@ -1,5 +1,5 @@
 //log-in
-let modalSignUpBtn = document.getElementById(`modal_sign_up_btn`);
+let modalSignUpBtn = document.getElementById(`modal_sign_up_btn1`);
 let modalSignInBtn = document.getElementById(`modal_sign_in_btn`);
 let signOutBtn = document.getElementById(`sign_out_btn`);
 let modalPasswordInput = document.getElementById(`sign_in_password_input`);
@@ -17,6 +17,7 @@ let modalSignIn = document.getElementById(`id02`);
 let sideName = document.getElementById(`side_user_name`);
 let bagRedDot = document.getElementById(`bag_red_dot`);
 let Content_Title_Bag = document.getElementById(`content_title_bag`);
+let see_more = document.getElementById(`see_more`);
 bagRedDot.style.display = `none`;
 Content_Title_Bag.style.display = `none`;
 
@@ -54,16 +55,36 @@ modalSignInBtn.addEventListener(`click`, modalSignInOnclickCallback);
 
 function signIn(index) {
     signInBtn.style.display = `none`;
+  signUpBtn.style.display = `none`;
     signOutBtn.style.display = `block`;
     sideName.textContent = user[index].name;
     sideName.style.display = `block`;     
 
 }
+
+
+// ----------------logn-up-------------------------
+function modalSignUpOnclickCallback(e){
+  e.preventDefault()
+  modalSignUp.style.display = `none`;
+  signInBtn.style.display = `none`;
+  signUpBtn.style.display = `none`;
+  signOutBtn.style.display = `block`;
+  sideName.textContent = nameInput.value; 
+  sideName.style.display = `block`
+  Content_Title_Bag.style.display = `block`;   
+}
+modalSignUpBtn.addEventListener(`click`,modalSignUpOnclickCallback)
+
+
+
 // Nút đăng xuất
-function signOut() {
+function signOut(e) {
+  e.preventDefault()
     signInBtn.style.display = `block`;
+    signUpBtn.style.display = `block`;
     signOutBtn.style.display = `none`;
-    sideName.textContent = ``;
+    sideName.style.display = `none`;
   Content_Title_Bag.style.display = `none`
 }
 signOutBtn.addEventListener(`click`, signOut);
@@ -77,18 +98,40 @@ function update_table() {
    mainProd.innerHTML = ''; 
   // table_body.innerHTML = '';
 
-  for (let data of productsData) {
+  for (let i=0; i< productsData.length-4; i++) {
     mainProd.insertAdjacentHTML('beforeend', `<tr><div class="main-item"> <div class="main-pic">
-          <img class="img_pro" wirdth="170" height="170" src="${data.imageUrl}" alt="${data.name}"/>
+          <img class="img_pro" wirdth="170" height="170" src="${productsData[i].imageUrl}" alt="${productsData[i].name}"/>
       </div>
       <div class="title">
-          <b>${data.brand}</b><br/>
-          <span>${data.price} vnđ</span>
+          <b>${productsData[i].brand}</b><br/>
+          <span>${productsData[i].price} vnđ</span>
           
-      </div></td><button class="add_btns">Buy</button><button class="view_btns" onclick="document.getElementById('view').style.display='block'">View</button></td></div></tr>`);
+      </div></td><div class="perfume_btns"><button class="add_btns" style="backgroud-color: red;">Buy</button><button class="view_btns" onclick="document.getElementById('view').style.display='block'">View</button></div></td></div></tr>`);
     };
 }
 update_table();
+
+//-----------see_more----------------------
+
+function seemore() {
+
+  // mainProd.innerHTML = ''; 
+//  table_body.innerHTML = '';
+
+ for (let i=8; i< productsData.length; i++) {
+   mainProd.insertAdjacentHTML('beforeend', `<tr><div class="main-item"> <div class="main-pic">
+         <img class="img_pro" wirdth="170" height="170" src="${productsData[i].imageUrl}" alt="${productsData[i].name}"/>
+     </div>
+     <div class="title">
+         <b>${productsData[i].brand}</b><br/>
+         <span>${productsData[i].price} vnđ</span>
+         
+     </div></td><div class="perfume_btns"><button class="add_btns" style="backgroud-color: red;">Buy</button><button class="view_btns" onclick="document.getElementById('view').style.display='block'">View</button></div></td></div></tr>`);
+   };
+   see_more.style.display = `none`
+}
+see_more.addEventListener(`click`,seemore)
+
 
 // //DOM add-delete
 
@@ -99,6 +142,7 @@ const tableChoice = document.getElementById('table_choice');
 const number_product = document.getElementsByClassName('number_ipt');
 const ContainerCartItems = document.getElementById('container_cart_items');
 const product_choice=[ ];
+// add_btns.style.display=`none`;
 
 // function update_table() {
 
@@ -111,6 +155,7 @@ const product_choice=[ ];
 // update_table();
 
 // button Add table choice
+
   for (let i = 0; i < add_btns.length; i++) {
         add_btns[i].addEventListener('click', () => {
            let choice ={name:productsData[i].name, brand:productsData[i].brand, price:productsData[i].price, size:productsData[i].size,sex:productsData[i].sex,scent:productsData[i].scent}
@@ -208,7 +253,7 @@ function showSlides() {
   for (i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" active", "");
   }
-  slides[slideIndex - 1].style.display = "block";
+  slides[slideIndex - 1].style.display = `block`;
   dots[slideIndex - 1].className += " active";
   setTimeout(showSlides, 2000);
 }

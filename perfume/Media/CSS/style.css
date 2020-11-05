@@ -3,14 +3,15 @@ section{
 }
 .banner{
     text-align: center;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 100px;
+    padding-bottom: 100px;
     /* background-color:#808080; */
     color: black;
     line-height: 1.;
     font-size: 25px;
     font-family: "Josefin Sans",sans-serif;
     font-weight: 500;
+    height: 500px;
 }
 #content{
   background-color: #d3d3d3;
@@ -21,18 +22,20 @@ section{
 .main-content{
     display:flex;
     flex-wrap: wrap;
-    width:1100px;
+    widows: 100%;;
     margin:0 auto;
     font-family: "Josefin Sans",sans-serif;
 
 }
 .main-item{
+    border:ridge;
     width:25%;
     padding:10px 0;
 }
 
 .title
 {
+  margin-left: -5px;
     width:170px;
     display:inline-block;
 }
@@ -47,12 +50,15 @@ section{
 nav{
   position: absolute ;
   margin: 50px 20px;
-  top: -60px;
+  top: -56px;
   right: 0px;
   color: black;
 }
 
-
+#content_bg{
+  margin-left: 5%;
+  width: 90%;;
+}
 
 nav>ul>li {
     text-align: center;
@@ -72,6 +78,9 @@ nav>ul>li>a {
 }
 nav>ul>li:hover>a {
     color:pink;
+}
+ul{
+  list-style-type: none;
 }
 
 
@@ -120,6 +129,7 @@ button:hover {
 
 /* Extra styles for the cancel button */
 .cancelbtn {
+  width: 49%;
   padding: 14px 20px;
   background-color: #f44336;
 }
@@ -138,15 +148,16 @@ img.avatar {
 }
 
 .container {
+ 
   margin-bottom: 50%;
-  margin-left: 18%;
-  align-items: center;
-  height: 80%;
-  width: 60%;
-  /* background-image:url('https://wallpaperaccess.com/full/473027.jpg'); */
-  background-color: white;
-  padding: 10px;
-  border-radius: 1rem;
+    margin-left: 29%;
+    align-items: center;
+    height: 67%;
+    width: 45%;
+    /* background-image: url(https://wallpaperaccess.com/full/473027.jpg); */
+    background-color: white;
+    padding: 10px;
+    border-radius: 1rem;
 }
 
 span.psw {
@@ -331,7 +342,7 @@ hr {
 }
 #sign_up_btn{
   border-radius: 1rem; 
-  width: 10%;
+  width:auto;
 }
 
 
@@ -355,16 +366,17 @@ hr {
 #sign_in_btn{
   width: 10%;
     border-radius: 1rem;
-    width: 10%;   
+    width: auto;   
 }
 
 #trademark{
   /* display:flex; */
   flex-wrap: wrap;
-  width:1100px;
+  widows: 100px;;
   margin:0 auto;
   font-family: "Josefin Sans",sans-serif;
   text-align: center;
+  background-color: #d3d3d3;
 
 /* background-color: #d3d3d3; */
 }
@@ -376,7 +388,7 @@ hr {
 
 .rowtext-center {
   display: grid;
-  grid-template-columns: repeat(3, 33%)
+  grid-template-columns: repeat(4, 25%)
 }
 
 #banner_odour{
@@ -439,12 +451,13 @@ body {
 }
 
 .img_pro{
-  padding-left: 30%;
+  padding-left: 33%;
 }
 
 img {
   /* padding-left: 30%; */
   vertical-align: middle;
+  /* margin-left: -1%; */
 }
 
 .container-fluid{
@@ -550,7 +563,10 @@ img {
   }
 }
 .x{
-  display: block ;
+  background-color:wheat;
+  margin-left: 84px;
+  display: block;
+  margin-right: 82px;
 }
 /* .new{
    background-image: url('https://scontent-xsp1-2.xx.fbcdn.net/v/t1.15752-9/122234229_372920083895777_3991063773885190169_n.jpg?_nc_cat=106&ccb=2&_nc_sid=ae9488&_nc_ohc=NmQ0QSs0DfkAX8bRkx6&_nc_ht=scontent-xsp1-2.xx&oh=3fe6f54235568dd2dd1173b99b1ae9e1&oe=5F953519');
@@ -787,13 +803,6 @@ th,td{    width: 3000px;
   width: 100%;
 } */
 #contact{
-<<<<<<< HEAD
-<<<<<<< HEAD
-  padding: 20px;
-=======
->>>>>>> a499bfbee161c0a31c07b02bd9d3c2935fc79346
-=======
->>>>>>> b52feebb47348db5afedbfd4e0fed9ee43a119dd
   background-color:#d3d3d3;
 }
 .col-sm-6 {
@@ -896,6 +905,7 @@ margin-left: 38%;
   border: 1px solid #888;
   width: fit-content; 
   padding: 15px;
+  border-radius: 1rem;
 }
 /* The Close Button (x) */
 .close {
@@ -932,4 +942,86 @@ margin-left: 38%;
 .info_text {
   display: flex;
 }
+.perfume_btns{
+  margin-left: 50px;
+  background-color:whitesmoke;
+  border-radius: 1rem;
+  width: auto;
+  margin-left: 5z0px;
+  /* margin-right: 80px; */
+  padding: 10px 10px;
+  display: flex;
+}
+.about_values{
+  display: flex ;
+}
+.our_values{
+  padding: 10px;
+  margin-top: -32px;
+}
+.close_btns{
+  border-radius: 1rem;
+  width: 80px;
+}
+#see_more{
+  cursor: pointer;
+  font-style: italic;
+}
 
+ .add_btns {
+  
+  width: 40%;
+}
+
+.view_btns{
+  margin-left:5px; ;
+  width: 40%;
+} 
+
+#cancel_button{
+  width: 49%;
+}
+
+#modal_sign_in_btn{
+  margin-left: 5px;
+  width: 49%;
+}
+
+#modal_sign_up_btn1{
+  width: 49%;
+}
+
+/* Dành cho điện thoại */
+@media screen and (max-width: 46.1875em){
+  #about-img{
+    width: 100%;
+    height: 20%;
+  }
+  #name{
+    padding-right: 200px;
+   } 
+
+ #email {
+  padding-right: 200px;
+ } 
+  #send_btn {
+    width: 100px;
+    border-radius: 1em;
+}
+
+ /* #perfume{
+   display: flex;
+ } */
+ .main-item{
+   flex-wrap: wrap;
+ }
+
+  .form-control{
+    width: 100px;
+  }
+
+  .our_values{
+    width: 10%;
+  }
+
+}
