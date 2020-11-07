@@ -344,6 +344,9 @@ function ShowModal(){
   email.value="";
   comments.value="";
  MyModal.style.display=`block`
+ setTimeout(function() {
+   MyModal.style.display = 'none'
+ }, 1000)
 }
 
 // When the user clicks on <span> (x), close the modal

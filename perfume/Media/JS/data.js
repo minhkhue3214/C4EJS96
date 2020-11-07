@@ -35,6 +35,19 @@ let user = [
 
 let productsData = [
     {
+        name:`L’Interdit`,
+        brand:`Givenchy`,
+        price:2600000,
+        imageUrl:`./Media/image/perfume/LINTERDIT.png`,
+        size:`80ml`,
+        sex: `female`,
+        scent:[
+            'poppy',
+            'musk',
+            'vetiver grass',
+        ],
+    },
+    {
         name:`La Nuit De L’homme EDT`,
         brand:`Yves Saint Laurent`,
         price:2950000,
@@ -46,31 +59,21 @@ let productsData = [
             'snowwood',
             'cardamom',
         ],
-    },{
-        name:`Libre`,
-        brand:`Yves Saint Laurent`,
-        price:3400000,
-        imageUrl:`./Media/image/perfume/Libre.png`,
-        size:`90ml`,
-        sex:`female`,
-        scent:[
-            'orange madarin',
-            'lavender',
-            'musk',
-        ],
-    }, {
-        name:`Dior Sauvage EDT`,
-        brand:`Dior`,
-        price:3150000,
-        imageUrl:`./Media/image/perfume/Dior Sauvage EDT.png`,
+    },
+    {
+        name:`Bloom Acqua Di Fiori`,
+        brand:`Gucci`,
+        price:3000000,
+        imageUrl:`./Media/image/perfume/Bloom-acqua-Di-Fiori-EDT.png`,
         size:`100ml`,
-        sex:`male`,
+        sex: `female`,
         scent:[
-            'black pepper',
-            'snowwood',
-            'ambroxan',
+            'yellow lemon',
+            'freesia',
+            'sandalwood',
         ],
-    }, {
+    },
+      {
         name:`Sauvage Parfum`,
         brand:`Dior`,
         price:3850000,
@@ -95,19 +98,21 @@ let productsData = [
             'rose',
             'tonka beans',
         ],
-    }, {
-        name:`Chanel Chance EDT`,
-        brand:`Chanel`,
-        price:3400000,
-        imageUrl:`./Media/image/perfume/Chanel Chance EDT.png`,
-        size:`100ml`,
-        sex:`female`,
+    },
+    {
+        name:`Scandal`,
+        brand:`jean Paul Gaultier`,
+        price:2950000,
+        imageUrl:`./Media/image/perfume/scandal.png`,
+        size:`80ml`,
+        sex: `female`,
         scent:[
-            'pineapple',
+            'red orange',
             'jasmine',
-            'vanilla',
+            'road wins',
         ],
-    }, {
+    },
+     {
         name:`Ombre Leather EDP`,
         brand:`Tom Ford`,
         price:4700000,
@@ -119,19 +124,21 @@ let productsData = [
             'cardamom',
             'moss moss',
         ],
-    }, {
-        name:`Noir de Noir`,
-        brand:`Tom Ford`,
-        price:8000000,
-        imageUrl:`./Media/image/perfume/Noir de Noir.png`,
+    }, 
+    {
+        name:`Eros EDT`,
+        brand:`Versace`,
+        price:2500000,
+        imageUrl:`./Media/image/perfume/eros-edt.png`,
         size:`100ml`,
-        sex: `unisex`,
+        sex: `male`,
         scent:[
-            'saffron flowers',
-            'rose',
-            'oak tree',
+            'mint',
+            'tonka beans',
+            'vanilla',
         ],
-    },{
+    },
+    {
         name:`My Burberry Blush`,
         brand:`Burberry`,
         price:3750000,
@@ -142,18 +149,6 @@ let productsData = [
             'yellow lemon',
             'rose',
             'purple flowers',
-        ],
-    },{
-        name:`Mr. Burberry EDP`,
-        brand:`Burberry`,
-        price:3000000,
-        imageUrl:`./Media/image/perfume/Mr. Burberry EDP.png`,
-        size:`100ml`,
-        sex: `male`,
-        scent:[
-            'cinnamon',
-            'snowwood',
-            'amber',
         ],
     },{
         name:`Twilly d’Hermès`,
@@ -167,7 +162,21 @@ let productsData = [
             'jasmine',
             'sandalwood',
         ],
-    },{
+    },
+    {
+        name:`L’homme Prada L’eau`,
+        brand:`Prada`,
+        price:3250000,
+        imageUrl:`./Media/image/perfume/leau.png`,
+        size:`100ml`,
+        sex: `male`,
+        scent:[
+            'neroli',
+            'amber',
+            'snowwood',
+        ],
+    },
+    {
         name:`Un Jardin Sur Le Nil`,
         brand:`Hermès`,
         price:2800000,
@@ -178,18 +187,6 @@ let productsData = [
             'pomelo',
             'peony',
             'musk',
-        ],
-    },{
-        name:`Bloom Acqua Di Fiori`,
-        brand:`Gucci`,
-        price:3000000,
-        imageUrl:`./Media/image/perfume/Bloom-acqua-Di-Fiori-EDT.png`,
-        size:`100ml`,
-        sex: `female`,
-        scent:[
-            'yellow lemon',
-            'freesia',
-            'sandalwood',
         ],
     },{
         name:`Gentleman`,
@@ -204,42 +201,6 @@ let productsData = [
             'benzoin',
         ],
     },{
-        name:`L’Interdit`,
-        brand:`Givenchy`,
-        price:2600000,
-        imageUrl:`./Media/image/perfume/LINTERDIT.png`,
-        size:`80ml`,
-        sex: `female`,
-        scent:[
-            'poppy',
-            'musk',
-            'vetiver grass',
-        ],
-    },{
-        name:`Eros EDT`,
-        brand:`Versace`,
-        price:2500000,
-        imageUrl:`./Media/image/perfume/eros-edt.png`,
-        size:`100ml`,
-        sex: `male`,
-        scent:[
-            'mint',
-            'tonka beans',
-            'vanilla',
-        ],
-    },{
-        name:`L’homme Prada L’eau`,
-        brand:`Prada`,
-        price:3250000,
-        imageUrl:`./Media/image/perfume/leau.png`,
-        size:`100ml`,
-        sex: `male`,
-        scent:[
-            'neroli',
-            'amber',
-            'snowwood',
-        ],
-    },{
         name:`Boss The Scent Intense For Men`,
         brand:`Hugo Boss`,
         price:3150000,
@@ -252,18 +213,6 @@ let productsData = [
             'leather',
         ],
     },{
-        name:`Scandal`,
-        brand:`jean Paul Gaultier`,
-        price:2950000,
-        imageUrl:`./Media/image/perfume/scandal.png`,
-        size:`80ml`,
-        sex: `female`,
-        scent:[
-            'red orange',
-            'jasmine',
-            'road wins',
-        ],
-    },{
         name:`Ultra Male`,
         brand:`jean Paul Gaultier`,
         price:2950000,
@@ -273,6 +222,66 @@ let productsData = [
         scent:[
             'pear',
             'lavender',
+            'amber',
+        ],
+    },{
+        name:`Libre`,
+        brand:`Yves Saint Laurent`,
+        price:3400000,
+        imageUrl:`./Media/image/perfume/Libre.png`,
+        size:`90ml`,
+        sex:`female`,
+        scent:[
+            'orange madarin',
+            'lavender',
+            'musk',
+        ],
+    },{
+        name:`Dior Sauvage EDT`,
+        brand:`Dior`,
+        price:3150000,
+        imageUrl:`./Media/image/perfume/Dior Sauvage EDT.png`,
+        size:`100ml`,
+        sex:`male`,
+        scent:[
+            'black pepper',
+            'snowwood',
+            'ambroxan',
+        ],
+    },{
+        name:`Chanel Chance EDT`,
+        brand:`Chanel`,
+        price:3400000,
+        imageUrl:`./Media/image/perfume/Chanel Chance EDT.png`,
+        size:`100ml`,
+        sex:`female`,
+        scent:[
+            'pineapple',
+            'jasmine',
+            'vanilla',
+        ],
+    },{
+        name:`Noir de Noir`,
+        brand:`Tom Ford`,
+        price:8000000,
+        imageUrl:`./Media/image/perfume/Noir de Noir.png`,
+        size:`100ml`,
+        sex: `unisex`,
+        scent:[
+            'saffron flowers',
+            'rose',
+            'oak tree',
+        ],
+    },{
+        name:`Mr. Burberry EDP`,
+        brand:`Burberry`,
+        price:3000000,
+        imageUrl:`./Media/image/perfume/Mr. Burberry EDP.png`,
+        size:`100ml`,
+        sex: `male`,
+        scent:[
+            'cinnamon',
+            'snowwood',
             'amber',
         ],
     },
