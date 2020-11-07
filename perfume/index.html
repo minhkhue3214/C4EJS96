@@ -308,9 +308,16 @@
                     </div>
                   </div>
                 </div>
+                    <!-- nav mobile -->
+                    <button  id="nav_mobile"   onclick="document.getElementById(`navpc`).style.display=`block`">
+                      <img width="20"
+                        src="/perfume/Media/image/burgerIcon.png"
+                        alt="iconnav">
+                      </button>
+                    <!-- nav mobile -->
+              
 
-
-                <nav>
+                <nav id="navpc">
                   <!-- <div id="content_title_bag">
                     <img width="30"
                       src="https://cdn2.iconfinder.com/data/icons/e-commerce-shopping-perfect-pixel-outline/32/e-commerece-icon-02-512.png"
@@ -318,6 +325,7 @@
                     <span id="bag_red_dot" class="all_red_dot">0</span>
                   </div> -->
                   <ul>
+                    <li><button id="close_nav" onclick="document.getElementById(`navpc`).style.display=`none`">X</button></li>
                     <li><a href="#about">ABOUT</a></li>
                     <li><a href="#perfume">PERFUME</a></li>
                     <li><a href="#trademark">TRADEMARK</a></li>
