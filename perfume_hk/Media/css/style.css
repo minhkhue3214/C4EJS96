@@ -1,0 +1,1218 @@
+section{
+    position: relative;
+}
+.banner{
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    /* background-color:#808080; */
+    color: black;
+    line-height: 1.;
+    font-size: 25px;
+    font-family: "Josefin Sans",sans-serif;
+    font-weight: 500;
+    height: 500px;
+}
+#content{
+  background-color: #d3d3d3;
+}
+.main{
+    text-align: center;
+}
+.main-content{
+    display:flex;
+    flex-wrap: wrap;
+    widows: 100%;;
+    margin:0 auto;
+    font-family: "Josefin Sans",sans-serif;
+
+}
+.main-item{
+    border:ridge;
+    width:25%;
+    padding:10px 0;
+}
+
+.title
+{
+  margin-left: -5px;
+    width:170px;
+    display:inline-block;
+}
+.main-pic{
+    padding-right: 7rem  ;
+}
+/* .buy{
+    position: absolute;
+    top: 0;
+} */
+/* nav */
+nav{
+  position: absolute ;
+  margin: 50px 20px;
+  top: -56px;
+  right: 0px;
+  color: black;
+}
+
+#content_bg{
+  
+  width: 100%;
+}
+
+nav>ul>li {
+    text-align: center;
+    line-height: 40px;
+    margin-left: 70px;
+    float: left ;
+}
+nav>ul>li>a {
+    color:black;
+    cursor: pointer;
+    text-decoration: none;
+    /* display: block; */
+    /* outline: none; */
+    width: 100% ;
+    font-family: 'Open Sans', sans-serif ;
+    text-transform: uppercase;
+}
+nav>ul>li:hover>a {
+    color:pink;
+}
+ul{
+  list-style-type: none;
+}
+
+
+/* ------------------------------sign-in----------------------------- */
+body {font-family: Arial, Helvetica, sans-serif;
+background-color:whitesmoke;}
+
+body h4{
+  color:black;
+}
+
+
+body h2{
+  color:black;
+}
+
+.input-group{
+  display: flex;
+  justify-content: center;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 0,1em solid rgb(197, 101, 101);
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: rgb(7 92 144);
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: 49%;
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 13%;
+  border-radius: 50%;
+  margin-left: 44%;
+}
+
+.container {
+ 
+  margin-bottom: 50%;
+    margin-left: 29%;
+    align-items: center;
+    height: 67%;
+    width: 45%;
+    /* background-image: url(https://wallpaperaccess.com/full/473027.jpg); */
+    background-color: white;
+    padding: 10px;
+    border-radius: 1rem;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+
+/* ------------------------------sign-up----------------------------- */
+/* body {font-family: Arial, Helvetica, sans-serif;} */
+* {box-sizing: border-box;}
+
+/* Full-width input fields */
+input[type=text1], input[type=password1] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+
+/* Add a background color when the inputs get focus */
+input[type=text1]:focus, input[type=password1]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: rgb(7 92 144);
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+/* button:hover {
+  opacity:1;
+} */
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container2 {
+  padding: 16px;
+}
+
+/* The Modal (background) */
+.modal2 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #474e5d;
+  padding-top: 50px;
+}
+
+/* Modal Content/Box */
+.modal-content2 {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+ 
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+     width: 100%;
+  }
+}
+#sign_up_btn{
+  margin-left: 10px;
+  border-radius: 1rem; 
+  width:auto;
+}
+
+
+#main-content button {
+    background-color:rgb(7, 92, 144);;
+    border-radius: 1rem;
+}
+
+#main-content button:click{
+  background-color: red;
+}
+
+#sign_out_btn{
+    background-color:black;
+    border-radius: 1rem;
+    width: 10%;
+    margin-left: 10px;
+
+}
+
+#sign_in_btn{
+  width: 10%;
+    border-radius: 1rem;
+    width: auto;   
+}
+
+#trademark{
+  /* display:flex; */
+  flex-wrap: wrap;
+  widows: 100px;;
+  margin:0 auto;
+  font-family: "Josefin Sans",sans-serif;
+  text-align: center;
+  background-color: #d3d3d3;
+
+/* background-color: #d3d3d3; */
+}
+
+#trademark img{
+  height: 200px;
+  width: 95%;
+}
+
+.rowtext-center {
+  display: grid;
+  grid-template-columns: repeat(4, 25%)
+}
+
+#banner_odour{
+  background-image: url('https://scontent-hkg4-1.xx.fbcdn.net/v/t1.15752-9/122234229_372920083895777_3991063773885190169_n.jpg?_nc_cat=106&ccb=2&_nc_sid=ae9488&_nc_ohc=z9MSHJlcmu8AX97LpxH&_nc_ht=scontent-hkg4-1.xx&oh=6da0299ad468c2d19d3d976b62f950a5&oe=5FBEF499');
+
+}
+.about-img{
+  border-radius: 50%;
+}
+#search_btn{
+  width: 100%;
+  background-color:rgb(7 92 144);
+}
+
+/* #side_user_name{
+  margin-left: 5%;
+} */
+
+#close{
+  width: 10%;
+}
+
+#bill{
+  width: 10%;
+}
+
+#send_btn{
+  width:100%;
+}
+
+/* #about_BodyOdour{
+  background-color: rgb(38 157 230);
+} */
+
+#input_place{
+  width: 60%;
+}
+
+#bag{
+  background-color:#d3d3d3;
+  padding: 1px 10px;
+}
+
+/* Trade */
+
+/* SLIDESHOW */
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Verdana, sans-serif;
+}
+/* .mySlides {
+
+} */
+
+.mySlides img {
+  width: 200px;
+  height: 200px;
+}
+
+.img_pro{
+  padding-left: 33%;
+}
+
+img {
+  /* padding-left: 30%; */
+  vertical-align: middle;
+  /* margin-left: -1%; */
+}
+
+.container-fluid{
+  /* background-color: gray; */
+  /* background-image:url(/perfume/Media/image/xoa.jpg); */
+  padding: 13px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* color: gray; */
+}
+
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+/* Caption text */
+.text {
+  margin-top: 50px;
+  color: black;
+  font-size: 15px;
+  /* padding: 8px 12px; */
+  bottom: -20px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+/* .test{
+  max-width: 800px;
+  margin: 0 auto !important;
+  text-align: center; }
+  .test blockquote {
+    font-size: 1.5rem;
+    font-style: italic; }
+  .test figure img {
+    max-width: 200px;
+    margin: 0 auto;
+    border-radius: 50%; }
+     */
+.test {
+  display: flex;
+  justify-content: center;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {
+    font-size: 11px;
+  }
+}
+.x{
+  background-color:#d3d3d3;;
+  
+  display: block;
+  
+}
+/* .new{
+   background-image: url('https://scontent-xsp1-2.xx.fbcdn.net/v/t1.15752-9/122234229_372920083895777_3991063773885190169_n.jpg?_nc_cat=106&ccb=2&_nc_sid=ae9488&_nc_ohc=NmQ0QSs0DfkAX8bRkx6&_nc_ht=scontent-xsp1-2.xx&oh=3fe6f54235568dd2dd1173b99b1ae9e1&oe=5F953519');
+} */
+
+/* giỏ hàng */
+.space {
+  height: 10px;
+  width: 100%;
+}
+
+.slice_bar {
+  height: 1px;
+  width: 100%;
+  background: black;
+}
+
+.modal_cart {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0%;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  background-color: #000000c4;
+  padding-top: 30px;
+}
+
+.modal_cart .container {
+  width: 700px;
+  height: 600px;
+  background-color: rgb(255, 255, 255);
+  margin: 5% auto 15% auto;
+  border-radius: 15px;
+  padding: 16px;
+  position: relative;
+}
+
+.modal_cart .container h3 {
+  color: rgb(68, 14, 0);
+  text-align: center;
+  margin-block-start: .5em;
+  margin-block-end: .5em;
+}
+
+.modal_cart_block_catgory {
+  display: flex;
+}
+
+.modal_cart_block_catgory .products {
+  width: 48%;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+}
+
+.modal_cart_block_catgory .price {
+  width: 30%;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+}
+
+.modal_cart_block_catgory .numbers {
+  width: 22%;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+}
+
+.modal_cart_block_item {
+  display: flex;
+}
+
+.modal_cart_block_item .item_products {
+  width: 48%;
+  height: 50px;
+  display: flex;
+}
+
+.modal_cart_block_item .item_products img {
+  width: 50px;
+  height: 50px;
+}
+
+.modal_cart_block_item .item_products .product_name {
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+}
+
+.modal_cart_block_item .item_price {
+  width: 30%;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  color: teal;
+}
+
+.modal_cart_block_item .item_numbers {
+  width: 22%;
+  height: 50px;
+  display: flex;
+  position: relative;
+}
+
+.modal_cart_block_item .item_numbers [type="number"] {
+  width: 50px;
+  height: fit-content;
+  position: absolute;
+  top: 30%;
+  left: 10%;
+}
+
+.modal_cart_block_item .item_numbers button {
+  outline: none;
+  width: 45px;
+  height: 45px;
+  padding: 15px 3px;
+  margin: 0px;
+  border-radius: 100%;
+  height: fit-content;
+  position: absolute;
+  top: 9%;
+  left: 59%;
+  background-color: crimson;
+  transition: background-color .5s;
+}
+
+.modal_cart_block_item .item_numbers button:hover {
+  background-color: black;
+}
+
+.container .bottom_slice_bar {
+  height: 1px;
+  width: 100%;
+  background: black;
+  position: absolute;
+  top: 88%;
+  left: 0%;
+}
+
+.container .sum_price_title {
+  width: 110px;
+  height: 45px;
+  position: absolute;
+  top: 90%;
+  left: 3%;
+  text-align: center;
+  line-height: 45px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.container .sum_price {
+  width: 150px;
+  height: 45px;
+  position: absolute;
+  top: 90%;
+  left: 20%;
+  text-align: center;
+  line-height: 45px;
+  color: teal;
+}
+
+.container .cart_cancel_button {
+  outline: none;
+  width: 110px;
+  margin: 0px;
+  border-radius: 15px;
+  height: fit-content;
+  position: absolute;
+  top: 90%;
+  right: 36%;
+  background-color: crimson;
+  transition: background-color .5s;
+}
+
+.container .cart_cancel_button:hover {
+  background-color: black;
+}
+
+.container .cart_pay_button {
+  outline: none;
+  width: 210px;
+  margin: 0px;
+  border-radius: 15px;
+  height: fit-content;
+  position: absolute;
+  top: 90%;
+  right: 5%;
+  background-color: teal;
+  color: white;
+  font-weight: bold;
+  transition: background-color .5s;
+  transition: color .5s;
+}
+
+.container .cart_pay_button:hover {
+  background-color: yellow;
+  color: black;
+}
+
+.remove_btn{
+  width: 100%;
+}
+
+/* css giỏ hàng */
+table, th{
+  background-color:whitesmoke;
+  border: 1px solid;
+  color:black;
+}
+th,td{    width: 3000px;
+  height: 50px;
+  font-family: "Trebuchet MS", Arial,Helvetica, sans-serif;
+  text-align: center;
+  background-color:whitesmoke;
+  color:black;
+  padding: 5px;
+  border: 1px solid;
+}
+
+.remove_btn {
+  border-radius: 50%;
+  background-color: white; 
+  color: black; 
+  border: 2px solid #0abff7;
+}
+
+/* .form-control{
+  width: 100%;
+} */
+#contact{
+  padding: 20px;
+  background-color:#d3d3d3;
+}
+.col-sm-6 {
+  display:inline-block;
+}
+
+.remove_btn:hover {
+  background-color: orangered;
+  color: white;
+}
+
+#info {
+  display: inline-block;
+  margin-right: 11%;
+ line-height: 200%;
+}
+
+#contact_input{
+  display: inline-block;
+  /* float: right; */
+  width: 60%;
+}
+ /* chỉnh phần nhập vào contact */
+ #name{
+   display: inline-block;
+   width: 100%;
+ }
+
+#email{
+  display: inline-block;
+  width: 100%;
+  height: 43px;
+}
+
+#comments{
+  width: 100%;
+}
+
+#send_btn {
+  width: 10%;
+  border-radius: 1em;
+}
+
+
+
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content-send {
+align-self: center;
+margin-left: 38%;
+  
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* ---------------------view---------------- */
+.view{
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+.modal-view{
+  background-color: #fefefe;
+  margin: 5% auto 15% auto;
+  border: 1px solid #888;
+  width: fit-content; 
+  padding: 15px;
+  border-radius: 1rem;
+}
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+
+/* -------------------------------view-------------------------------------------- */
+.img_pro_view{
+  padding: 0%;
+}
+
+.info_img{
+  display: flex;
+  flex:1;
+  justify-content: center;
+}
+
+.title_view{
+  flex:1;
+}
+
+.info_text {
+  display: flex;
+}
+.perfume_btns{
+  margin-left: 50px;
+  background-color:whitesmoke;
+  border-radius: 1rem;
+  width: auto;
+  margin-left: 5z0px;
+  /* margin-right: 80px; */
+  padding: 10px 10px;
+  display: flex;
+}
+.about_values{
+  display: flex ;
+}
+.our_values{
+  font-size: larger;
+  padding: 10px;
+  margin-top: -32px;
+}
+.close_btns{
+  border-radius: 1rem;
+  width: 80px;
+}
+#see_more{
+  cursor: pointer;
+  font-style: italic;
+}
+
+ .add_btns {
+  
+  width: 40%;
+}
+
+.view_btns{
+  margin-left:5px; ;
+  width: 40%;
+} 
+
+#cancel_button{
+  width: 49%;
+}
+
+#modal_sign_in_btn{
+  margin-left: 5px;
+  width: 49%;
+}
+
+#modal_sign_up_btn1{
+  width: 49%;
+}
+
+/*------------------------------------------ Dành cho small tablet--------------------------------------- */
+@media screen and (max-width: 800px) {
+  .modal-content-send img{
+    width: 60%;
+    margin-left: 0%;
+  }
+
+  .perfume_btns {
+    margin-left: 12%;
+  }
+  #about-img{
+    width: 100%;
+    height: 100%;
+  }
+  .title {
+    margin-left: -24px;
+    width: 170px;
+    display: inline-block;
+  }
+
+  .img_pro{
+    padding-left: 18%;
+  }
+  
+  #name{
+    padding-right: 200px;
+   } 
+
+ #email {
+  padding-right: 200px;
+ } 
+  #send_btn {
+    width: 100px;
+    border-radius: 1em;
+}
+
+ /* #perfume{
+   display: flex;
+ } */
+ .main-item{
+   width: 100%;
+   flex-wrap: wrap;
+ }
+
+  .form-control{
+    width: 100px;
+  }
+  #content_bg {
+    margin-left: 0%;
+    width: 100%;
+}
+
+  .x{
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  
+  .our_values{
+    position: absolute;
+    /* padding-left: 0px; */
+    padding: 13px 35px 35px 0px;
+  }
+
+  .main-content{
+    flex-direction: column;
+  }
+
+  #sign_up_btn{
+    padding-left: 10px;
+  }
+  nav>ul>li>a{
+    color: white;
+  }
+#bag{
+
+  border-radius: 1em;
+}
+
+  nav {
+    position: absolute;
+    margin-left: -10%;
+    /* margin: 50px 19px; */
+    top: 49px;
+    right: -2px;
+    color: black;
+}
+#modal_sign_in_btn{
+  width: 48%;
+    margin-left: 0%;
+    height: 46px;
+}
+#sign_out_btn{
+  width: 100px;
+}
+#cancel_button {
+  height: 46px;
+  width: 48%;
+}
+  nav>ul>li{
+    margin-left: 15px;
+  }
+  .modal_cart .container{
+    width: 100%;
+  }
+  .container .cart_pay_button {
+    width: 30%;
+  }
+  .container .cart_pay_button{
+    margin-left: 10px;
+  }
+}
+#nav_mobile{
+  display: none;
+}
+#close_nav{
+  display: none;
+}
+
+/*---------------- responsive cho mobile--------------------------------------------- */
+@media screen and (max-width: 450px){
+  #close_nav{
+    background-color: red;
+    display: block;
+  }
+
+  nav>ul>li {
+    float: none;
+    margin-left: 15px;
+  }
+
+  nav {
+    display: none;
+    background-color: black;
+    position: absolute;
+    margin-left: -10%;
+    /* margin: 50px 19px; */
+    top: 9px;
+    right: -20px;
+    color: black;
+}
+
+  #nav_mobile{
+    width: 15%;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 3px;
+    background-color: black;
+  }
+  
+
+  #trademark img{
+    height: 100px;
+    width: 100%;
+  }
+
+  .img_pro {
+    padding-left: 37%;
+}
+#modal_sign_in_btn{
+  height: 44px;
+  width: 45%;
+  padding-top: 12px;
+  margin: 0px;
+  border-radius: 1em;
+}
+.container .cart_pay_button {
+  width: 18%;
+  height: 7%;
+  padding: 8px;
+}
+
+.container .cart_cancel_button {
+  outline: none;
+  width: 70px;
+  margin: 0px;
+  border-radius: 15px;
+  height: fit-content;
+  position: absolute;
+  top: 90%;
+  right: 24%;
+  background-color: crimson;
+  transition: background-color 0.5s ease 0s;
+}
+
+.modal-view{
+  padding: 0%;
+}
+/* .title {
+  margin-left: -2%;
+  padding-bottom: 5%;
+} */
+
+#about_BodyOdour{
+  height: 2%;
+}
+
+.our_values{
+  font-size: medium;
+  position: absolute;
+  top: 11%;
+}
+
+#about{
+  height: 1500px;
+}
+
+#cancel_button {
+  height: 44px;
+  width: 45%;
+  padding-top: 12px;
+  margin: 0px;
+  border-radius: 1em;
+}
+
+#sign_in_status_title{
+  font-size: medium;
+}
+.our_values >p {
+  font-size: larger;
+}
+}
