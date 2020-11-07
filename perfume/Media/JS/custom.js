@@ -98,12 +98,12 @@ function update_table() {
    mainProd.innerHTML = ''; 
   // table_body.innerHTML = '';
 
-  for (let i=0; i< productsData.length-4; i++) {
+  for (let i=0; i< productsData.length; i++) {
     mainProd.insertAdjacentHTML('beforeend', `<tr><div class="main-item"> <div class="main-pic">
           <img class="img_pro" wirdth="170" height="170" src="${productsData[i].imageUrl}" alt="${productsData[i].name}"/>
       </div>
       <div class="title">
-          <b>${productsData[i].brand}</b><br/>
+          <b>${productsData[i].name}</b><br/>
           <span>${productsData[i].price} vnđ</span>
           
       </div></td><div class="perfume_btns"><button class="add_btns" style="backgroud-color: red;">Buy</button><button class="view_btns" onclick="document.getElementById('view').style.display='block'">View</button></div></td></div></tr>`);
@@ -113,24 +113,24 @@ update_table();
 
 //-----------see_more----------------------
 
-function seemore() {
+// function seemore() {
 
   // mainProd.innerHTML = ''; 
 //  table_body.innerHTML = '';
 
- for (let i=8; i< productsData.length; i++) {
-   mainProd.insertAdjacentHTML('beforeend', `<tr><div class="main-item"> <div class="main-pic">
-         <img class="img_pro" wirdth="170" height="170" src="${productsData[i].imageUrl}" alt="${productsData[i].name}"/>
-     </div>
-     <div class="title">
-         <b>${productsData[i].brand}</b><br/>
-         <span>${productsData[i].price} vnđ</span>
+//  for (let i=12; i< productsData.length; i++) {
+//    mainProd.insertAdjacentHTML('beforeend', `<tr><div class="main-item"> <div class="main-pic">
+//          <img class="img_pro" wirdth="170" height="170" src="${productsData[i].imageUrl}" alt="${productsData[i].name}"/>
+//      </div>
+//      <div class="title">
+//          <b>${productsData[i].name}</b><br/>
+//          <span>${productsData[i].price} vnđ</span>
          
-     </div></td><div class="perfume_btns"><button class="add_btns" style="backgroud-color: red;">Buy</button><button class="view_btns" onclick="document.getElementById('view').style.display='block'">View</button></div></td></div></tr>`);
-   };
-   see_more.style.display = `none`
-}
-see_more.addEventListener(`click`,seemore)
+//      </div></td><div class="perfume_btns"><button class="add_btns" style="backgroud-color: red;">Buy</button><button class="view_btns" onclick="document.getElementById('view').style.display='block'">View</button></div></td></div></tr>`);
+//    };
+//    see_more.style.display = `none`
+// }
+// see_more.addEventListener(`click`,seemore)
 
 
 // //DOM add-delete
@@ -357,3 +357,48 @@ function ShowModal(){
 //   var view1 = document.getElementById('view')
 //   view1.style.display = "none";
 //   }
+
+// tìm kiếm theo tên
+let input_search = document.getElementById('input_place')
+function getInputValue(){
+  mainProd.innerHTML ='';
+  var inputVal = input_search.value.toLowerCase();
+  for(let i = 0 ; i < productsData.length ;i++){
+    let y = productsData[i].name.toLowerCase()
+      if(y == inputVal){
+        // update_table();
+        mainProd.insertAdjacentHTML('beforeend', `<tr><div class="main-item"> <div class="main-pic">
+        <img class="img_pro" wirdth="170" height="170" src="${productsData[i].imageUrl}" alt="${productsData[i].name}"/>
+    </div>
+    <div class="title">
+        <b>${productsData[i].name}</b><br/>
+        <span>${productsData[i].price} vnđ</span>
+        
+    </div></td><div class="perfume_btns"><button class="add_btns" style="backgroud-color: red;">Buy</button><button class="view_btns" onclick="document.getElementById('view').style.display='block'">View</button></div></td></div></tr>`);
+
+        searchResult(productsData[i].name);
+        
+    }
+  }
+}
+
+let Productslist = document.getElementById('Productslist')
+function searchResult (name){console.log(name)
+  Productslist.insertAdjacentHTML('beforeEnd',
+  `
+      <option value="${name}" />              
+  `
+  )
+}
+let arrayName = [];
+
+function fillArr(){
+  for( let i = 0 ; i <productsData.length;i++){
+    arrayName.push(productsData[i].name.toLowerCase())
+  }
+  // console.log(arrayName)
+  for(let i = 0 ; i < productsData.length; i++){
+    searchResult(productsData[i].name)
+  }
+}
+console.log(fillArr())
